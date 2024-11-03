@@ -213,17 +213,53 @@
   <!-- Seção Informações Adicionais -->
   <div class="section-column">
     <div class="data">
-      <input type="text" />
+      <img src="../../../assets/Group (3).png" alt="" />
+      <div class="row-data">
+        <div class="input-label">
+          <h5>DATA DA REALIZAÇÃO</h5>
+          <input type="date" />
+        </div>
+        <div class="input-label">
+          <h5>DATA DE VALIDADE</h5>
+          <input type="date" />
+        </div>
+      </div>
     </div>
 
-    <div class="section-pericia"></div>
+    <div class="section-pericia">
+      <h5>NECESSIDADE PERÍCIA ESPECIAL</h5>
+      <div class="section-button-especial">
+        <button class="sim">SIM</button>
+        <button class="nao">NÃO</button>
+      </div>
+    </div>
 
-    <div class="observacoes-medicas"></div>
+    <div class="observacoes-medicas">
+      <img src="../../../assets/Group (4).png" alt="" class="icon-img" />
+      <h5>OBSERVAÇÕES MÉDICAS</h5>
+      <input
+        type="text"
+        placeholder="Campo para preenchimento"
+        class="field-input"
+      />
+    </div>
   </div>
 
   <div class="footer">
-    <button class="button red">Sair</button>
-    <button class="button green">Transmitir</button>
-    <button class="button blue">Fechar</button>
+    <div class="input-label">
+      <label>CATEGORIA AUTORIZADA</label>
+      <input type="text" placeholder="AB - CAT CARRO E M" class="input-small" />
+    </div>
+    <div class="input-label">
+      <label>RESULTADO DO EXAME</label>
+      <input type="text" placeholder="APTO  " class="input-small" />
+    </div>
+    <div class="input-label">
+      <label>DATA DE RETORNO</label>
+      <input type="date" placeholder="00" class="input-small" />
+    </div>
+    <button class="sair">Sair</button>
+    <button class="transmitir">Transmitir</button>
+    <button class="fechar">Fechar</button>
   </div>
 </div>
