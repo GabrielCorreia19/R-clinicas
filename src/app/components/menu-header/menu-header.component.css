@@ -1,0 +1,10 @@
+.menu-header {
+    display: flex;
+    padding: .5rem 0 .5rem 3rem;
+    font-weight: bold;
+    .menu-icon {
+        margin-right: .4rem;
+        color: #fd7200;
+        cursor: pointer;
+    }
+}

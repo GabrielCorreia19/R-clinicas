@@ -1,21 +1,26 @@
 import { Component } from '@angular/core';
-import { Router} from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+  styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  isVisible: boolean = true; // Navbar visível por padrão
 
   constructor(private router: Router) {}
 
-goFormPage() {
-  this.router.navigate(['formularios']);
-}
-goHome() {
-  this.router.navigate(['home']);
-}
+  toggleVisibility() {
+    this.isVisible = !this.isVisible; // Alterna visibilidade
+  }
+
+  goFormPage() {
+    this.router.navigate(['formularios']);
+  }
+
+  goHome() {
+    this.router.navigate(['home']);
+  }
 }
