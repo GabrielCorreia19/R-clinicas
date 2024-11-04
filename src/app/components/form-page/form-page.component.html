@@ -1,4 +1,7 @@
-<app-menu-header (toggleNavbar)="toggleNavbar()"></app-menu-header>
+<app-menu-header
+  (toggleNavbar)="toggleNavbar()"
+  [isNavbarVisible]="isNavbarVisible"
+></app-menu-header>
 
 @if (isNavbarVisible) {
 <aside class="sidebar">
