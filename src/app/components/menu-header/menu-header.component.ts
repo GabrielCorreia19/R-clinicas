@@ -10,6 +10,6 @@ export class MenuHeaderComponent {
   @Output() toggleNavbar = new EventEmitter<void>();
 
   onMenuClick() {
-    this.toggleNavbar.emit();
+    this.toggleNavbar.emit(); // Emite o evento para o componente pai
   }
 }
