@@ -21,4 +21,8 @@ export class NavbarComponent {
   goHome() {
     this.router.navigate(['home']);
   }
+
+  goAgenda() {
+    this.router.navigate(['agenda']);
+  }
 }
