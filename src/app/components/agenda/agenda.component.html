@@ -48,8 +48,18 @@
       <div class="input-group">
         <label>ATIVIDADE REMUNERADA</label>
         <div class="buttons-group">
-          <button>Sim</button>
-          <button>Não</button>
+          <button
+            [ngClass]="{ active: buttonGroups[0] === 'Sim' }"
+            (click)="toggleButton(0, 'Sim')"
+          >
+            Sim
+          </button>
+          <button
+            [ngClass]="{ active: buttonGroups[0] === 'Não' }"
+            (click)="toggleButton(0, 'Não')"
+          >
+            Não
+          </button>
         </div>
       </div>
     </div>
@@ -103,8 +113,18 @@
       <div class="input-group">
         <label>ATIVIDADE REMUNERADA</label>
         <div class="buttons-group">
-          <button>Sim</button>
-          <button>Não</button>
+          <button
+            [ngClass]="{ active: buttonGroups[1] === 'Sim' }"
+            (click)="toggleButton(1, 'Sim')"
+          >
+            Sim
+          </button>
+          <button
+            [ngClass]="{ active: buttonGroups[1] === 'Não' }"
+            (click)="toggleButton(1, 'Não')"
+          >
+            Não
+          </button>
         </div>
       </div>
     </div>
@@ -128,9 +148,11 @@
     </div> -->
 
     <div class="footer">
-      <button class="sair">SAIR</button>
+      <button class="sair" (click)="backToHome()">SAIR</button>
       <button class="salvar">SALVAR</button>
-      <button class="finalizar">FINALIZAR ATENDIMENTO</button>
+      <button class="finalizar" (click)="backToHome()">
+        FINALIZAR ATENDIMENTO
+      </button>
     </div>
   </div>
 </div>

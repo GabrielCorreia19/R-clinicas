@@ -4,7 +4,6 @@
     justify-content: center;
     width: 100%;
 }
-
 .section-container {
     display: flex;
     flex-direction: column;
@@ -20,8 +19,6 @@
     column-gap: 2rem;
     width: 90%;
 }
-
-
 
 .input-group {
     display: flex;
@@ -67,18 +64,20 @@
     color: white;
     width: 100%;
     transition: all .2s ease-in-out;
-
-    &:hover {
-        transform: scale(1.05);
-    }
+    background-color: #A1DAD4;
 }
 
 .buttons-group button:first-child {
-    background-color: #0BBFAD;
+    background-color: #A1DAD4;
 }
 
 .buttons-group button:last-child {
     background-color: #A1DAD4;
+}
+
+.buttons-group button.active {
+    background-color: #0BBFAD;
+    transform: scale(1.05);
 }
 
 
@@ -167,7 +166,7 @@ select {
         width: 100%; 
         max-width: 200px; 
         padding: 0.6rem .5rem; 
-            
+        font-weight: bold;
 
         &:hover {
             transform: scale(1.05);
