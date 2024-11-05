@@ -54,8 +54,18 @@
     <div class="input-group">
       <label>ATIVIDADE REMUNERADA</label>
       <div class="buttons-group">
-        <button>Sim</button>
-        <button>Não</button>
+        <button
+          [ngClass]="{ active: buttonGroups[0] === 'Sim' }"
+          (click)="toggleButton(0, 'Sim')"
+        >
+          Sim
+        </button>
+        <button
+          [ngClass]="{ active: buttonGroups[0] === 'Não' }"
+          (click)="toggleButton(0, 'Não')"
+        >
+          NÃO
+        </button>
       </div>
     </div>
   </div>
@@ -114,15 +124,39 @@
         <div class="input-label">
           <label>ESTRABISMO</label>
           <div class="section-buttons">
-            <button class="sim">SIM</button>
-            <button class="nao">NÃO</button>
+            <button
+              class="sim"
+              [ngClass]="{ active: buttonGroups[2] === 'Sim' }"
+              (click)="toggleButton(2, 'Sim')"
+            >
+              SIM
+            </button>
+            <button
+              class="nao"
+              [ngClass]="{ active: buttonGroups[2] === 'Não' }"
+              (click)="toggleButton(2, 'Não')"
+            >
+              NÃO
+            </button>
           </div>
         </div>
         <div class="input-label">
           <label>DALTÔNICO</label>
           <div class="section-buttons">
-            <button class="sim">SIM</button>
-            <button class="nao">NÃO</button>
+            <button
+              class="sim"
+              [ngClass]="{ active: buttonGroups[3] === 'Sim' }"
+              (click)="toggleButton(3, 'Sim')"
+            >
+              SIM
+            </button>
+            <button
+              class="nao"
+              [ngClass]="{ active: buttonGroups[3] === 'Não' }"
+              (click)="toggleButton(3, 'Não')"
+            >
+              NÃO
+            </button>
           </div>
         </div>
       </div>
@@ -130,15 +164,39 @@
         <div class="input-label">
           <label>V.CROMÁTICA</label>
           <div class="section-buttons">
-            <button class="sim">SIM</button>
-            <button class="nao">NÃO</button>
+            <button
+              class="sim"
+              [ngClass]="{ active: buttonGroups[4] === 'Sim' }"
+              (click)="toggleButton(4, 'Sim')"
+            >
+              SIM
+            </button>
+            <button
+              class="nao"
+              [ngClass]="{ active: buttonGroups[4] === 'Não' }"
+              (click)="toggleButton(4, 'Não')"
+            >
+              NÃO
+            </button>
           </div>
         </div>
         <div class="input-label">
           <label>PERCEPÇÃO LUMINOSA</label>
           <div class="section-buttons">
-            <button class="sim">SIM</button>
-            <button class="nao">NÃO</button>
+            <button
+              class="sim"
+              [ngClass]="{ active: buttonGroups[5] === 'Sim' }"
+              (click)="toggleButton(5, 'Sim')"
+            >
+              SIM
+            </button>
+            <button
+              class="nao"
+              [ngClass]="{ active: buttonGroups[5] === 'Não' }"
+              (click)="toggleButton(5, 'Não')"
+            >
+              NÃO
+            </button>
           </div>
         </div>
       </div>
@@ -146,15 +204,39 @@
         <div class="input-label">
           <label>V. ESTEREOSCOPIA</label>
           <div class="section-buttons">
-            <button class="sim">SIM</button>
-            <button class="nao">NÃO</button>
+            <button
+              class="sim"
+              [ngClass]="{ active: buttonGroups[6] === 'Sim' }"
+              (click)="toggleButton(6, 'Sim')"
+            >
+              SIM
+            </button>
+            <button
+              class="nao"
+              [ngClass]="{ active: buttonGroups[6] === 'Não' }"
+              (click)="toggleButton(6, 'Não')"
+            >
+              NÃO
+            </button>
           </div>
         </div>
         <div class="input-label">
           <label>OFUSCAMENTO | V. NOTURNA</label>
           <div class="section-buttons">
-            <button class="sim">SIM</button>
-            <button class="nao">NÃO</button>
+            <button
+              class="sim"
+              [ngClass]="{ active: buttonGroups[7] === 'Sim' }"
+              (click)="toggleButton(7, 'Sim')"
+            >
+              SIM
+            </button>
+            <button
+              class="nao"
+              [ngClass]="{ active: buttonGroups[7] === 'Não' }"
+              (click)="toggleButton(7, 'Não')"
+            >
+              NÃO
+            </button>
           </div>
         </div>
       </div>
@@ -232,8 +314,20 @@
       <div class="section-pericia">
         <h5>NECESSIDADE PERÍCIA ESPECIAL</h5>
         <div class="section-button-especial">
-          <button class="sim">SIM</button>
-          <button class="nao">NÃO</button>
+          <button
+            class="sim"
+            [ngClass]="{ active: buttonGroups[8] === 'Sim' }"
+            (click)="toggleButton(8, 'Sim')"
+          >
+            SIM
+          </button>
+          <button
+            class="nao"
+            [ngClass]="{ active: buttonGroups[8] === 'Não' }"
+            (click)="toggleButton(8, 'Não')"
+          >
+            NÃO
+          </button>
         </div>
       </div>
 

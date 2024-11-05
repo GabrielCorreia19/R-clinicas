@@ -62,19 +62,22 @@
     color: white;
     width: 100%;
     transition: all .2s ease-in-out;
-
-    &:hover {
-        transform: scale(1.05);
-    }
+    background-color: #A1DAD4;
 }
 
 .buttons-group button:first-child {
-    background-color: #0BBFAD;
+    background-color: #A1DAD4;
 }
 
 .buttons-group button:last-child {
     background-color: #A1DAD4;
 }
+
+.buttons-group button.active {
+    background-color: #0BBFAD;
+    transform: scale(1.05);
+}
+
 
 
 
@@ -143,14 +146,19 @@
 
         &:hover {
             transform: scale(1.05);
-        }
+        }        
+        
     }
-
+    
     .sim {
         background-color: #A1DAD4;
     }
     .nao {
+        background-color: #A1DAD4;
+    }
+    button.active {
         background-color: #0BBFAD;
+        transform: scale(1.05);
     }
 }
 
@@ -295,12 +303,16 @@
                 transform: scale(1.05);
             }
 
-            &.sim {
-                background-color: #0BBFAD;
-            }
-            &.nao {
-                background-color: #A1DAD4;
-            }
+        }
+        .sim {
+            background-color: #A1DAD4;
+        }
+        .nao {
+            background-color: #A1DAD4;
+        }
+        button.active {
+            background-color: #0BBFAD;
+            transform: scale(1.05);
         }
     }
 }
