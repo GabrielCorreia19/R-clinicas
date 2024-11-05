@@ -23,6 +23,7 @@
 .input-group {
     display: flex;
     flex-direction: column;
+    width: 20%;
 }
 
 .input-group label {
@@ -65,6 +66,10 @@
     width: 100%;
     transition: all .2s ease-in-out;
     background-color: #A1DAD4;
+
+    &:hover{
+        transform: scale(1.05);
+    }
 }
 
 .buttons-group button:first-child {
@@ -77,7 +82,10 @@
 
 .buttons-group button.active {
     background-color: #0BBFAD;
-    transform: scale(1.05);
+
+    &:hover{
+        transform: scale(1.05);
+    }
 }
 
 
