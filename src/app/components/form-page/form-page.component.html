@@ -254,16 +254,21 @@
       <label>CATEGORIA AUTORIZADA</label>
       <input type="text" placeholder="AB - CAT CARRO E M" class="input-small" />
     </div>
-    <div class="input-label">
+    <div class="input-group" style="width: 260px">
       <label>RESULTADO DO EXAME</label>
-      <input type="text" placeholder="APTO  " class="input-small" />
+      <select>
+        <option value="APTO">APTO</option>
+        <option value="APTO">APTO COM RESTRIÇÃO</option>
+        <option value="APTO">INAPTO</option>
+        <option value="APTO">INAPTO TEMPORÁRIO</option>
+      </select>
     </div>
     <div class="input-label">
       <label>DATA DE RETORNO</label>
       <input type="date" placeholder="00" class="input-small" />
     </div>
-    <button class="sair">SAIR</button>
+    <button class="sair" (click)="backToHome()">SAIR</button>
     <button class="transmitir">TRANSMITIR</button>
-    <button class="fechar">FECHAR</button>
+    <button class="fechar" (click)="backToHome()">FECHAR</button>
   </div>
 </div>

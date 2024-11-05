@@ -386,6 +386,17 @@
     }
 }
 
+select {
+    border: none;
+    border-radius: 5px;
+    font-size: .8rem;
+    background-color: #eef4fc;
+    border: 1px solid #ccc;
+    width: 100%;
+	height: 100%;
+	padding: .4rem;
+}
+
 input[type="date"]::-webkit-calendar-picker-indicator {
     background-image: url('../../../assets/Group\ \(3\).png');
     background-repeat: no-repeat;
