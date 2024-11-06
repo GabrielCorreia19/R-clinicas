@@ -1,7 +1,7 @@
 {
   "name": "r-clinicas",
   "version": "0.0.0",
-  "homepage": "https://gabrielcorreia19.github.io/R-clinicas",
+  "homepage": "https://gabrielcorreia19.github.io/R-clinicas/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
